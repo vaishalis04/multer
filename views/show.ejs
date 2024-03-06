@@ -1,0 +1,11 @@
+
+
+<% DATA.forEach(function(d){ %>
+  <h1> <%= d.username%></h1> 
+    <img src="/uploads/<%= d.fileupload%>" alt="" height="300">
+<hr>
+<a href="/delete/<%= d._id%>">DELETE</a>
+<a href="/update/<%=d._id%>">UPDATE</a>
+<%})%>
+
+<a href="/">back</a>
